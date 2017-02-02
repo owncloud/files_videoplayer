@@ -46,17 +46,12 @@ var videoViewer = {
 		'video/webm',
 		'video/x-flv',
 		'video/ogg',
-		'video/quicktime',
+		'video/quicktime'
 	],
 	onView : function(file, data) {
 		videoViewer.file = file;
 		videoViewer.dir = data.dir;
-		if ($('#isPublic').length){
-			// No seek for public videos atm, sorry
-			videoViewer.location = data.fileList.getDownloadUrl(file, videoViewer.dir);
-		} else {
-			videoViewer.location = OC.linkToRemote('webdav') + OC.joinPaths(videoViewer.dir, file);
-		}
+		videoViewer.location = data.fileList.getDownloadUrl(file, videoViewer.dir);
 		videoViewer.mime = data.$file.attr('data-mime');
 		videoViewer.showPlayer();
 	},
