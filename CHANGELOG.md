@@ -4,7 +4,9 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
-## [0.10.1]
+## [Unreleased]
+
+## [0.10.1] - 2019-04-15
 
 ### Changed 
 
@@ -22,4 +24,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Fixed
 - Can't play video with "#" in path or filename [#64](https://github.com/owncloud/files_videoplayer/pull/64)
 
+[Unreleased]: https://github.com/owncloud/files_videoplayer/compare/v0.10.1..master
 [0.10.1]: https://github.com/owncloud/files_videoplayer/compare/v10.0.0...v0.10.1
+
